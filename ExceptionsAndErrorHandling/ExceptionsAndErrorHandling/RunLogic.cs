@@ -14,7 +14,7 @@ namespace ExceptionsAndErrorHandling
         }
         public int RunLogic1(int[] numbers)
         {
-            if(numbers.Length == 0)
+            if (numbers == null || numbers.Length == 0)
             {
                 throw new ScubaException(9);
             }
@@ -52,12 +52,28 @@ namespace ExceptionsAndErrorHandling
 
         public void RunLogic4(string data1, int data2, long data3)
         {
-
+            try
+            {
+                _logic.Logic4(data1, data2, data3);
+            }
+            catch (NotImplementedException e)
+            {
+                Console.WriteLine(e.ToString());
+                throw;
+            }
         }
 
         public void RunLogic5(string dllName)
         {
-
+            try
+            {
+                _logic.Logic5(dllName);
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.ToString());
+                throw;
+            }
         }
     }
 }
