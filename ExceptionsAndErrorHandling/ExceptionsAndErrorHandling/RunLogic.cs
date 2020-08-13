@@ -69,6 +69,11 @@ namespace ExceptionsAndErrorHandling
             {
                 _logic.Logic5(dllName);
             }
+            catch(FileNotFoundException e)
+            {
+                Console.WriteLine(e.ToString());
+                throw;
+            }
             catch (IOException e)
             {
                 Console.WriteLine(e.ToString());

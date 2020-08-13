@@ -11,10 +11,10 @@ namespace ExceptionsAndErrorHandling
             try
             {
                 RunLogic runLogic = new RunLogic();
-                runLogic.RunLogic1(null);
-                runLogic.RunLogic2("in.txt", "out.txt");
-                runLogic.RunLogic3("data");
-                runLogic.RunLogic4("abc", 9, 10);
+                //runLogic.RunLogic1(null);
+                //runLogic.RunLogic2("in.txt", "out.txt");
+                //runLogic.RunLogic3("data");
+                //runLogic.RunLogic4("abc", 9, 10);
                 runLogic.RunLogic5("file");
             }
             catch (Exception e)
