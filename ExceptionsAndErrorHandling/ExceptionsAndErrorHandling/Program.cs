@@ -6,7 +6,6 @@ namespace ExceptionsAndErrorHandling
     {
         static void Main(string[] args)
         {
-            int number = 2;
 
             try
             {

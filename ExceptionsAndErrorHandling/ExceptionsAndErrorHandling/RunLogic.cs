@@ -79,6 +79,11 @@ namespace ExceptionsAndErrorHandling
                 Console.WriteLine(e.ToString());
                 throw;
             }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.ToString());
+                throw;
+            }
         }
     }
 }
